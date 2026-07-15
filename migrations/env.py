@@ -6,7 +6,7 @@ from sqlalchemy import pool
 from alembic import context
 
 import models # Models
-from core.settings import settings # Settings
+from core import settings # Settings
 from base import BaseModel # DeclarativeBase
 
 # this is the Alembic Config object, which provides
