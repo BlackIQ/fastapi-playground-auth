@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 
 from dependencies.db import get_db  # Dependencies
 from models import User  # Models
-from schemas import LoginSchema, RegisterSchema  # Schemas
+from schemas import LoginSchema, RegisterSchema, TokenSchema  # Schemas
 from security.password import hash_password, verify_password  # Has Password
 from security.token import create_access_token  # JWT
 
@@ -15,7 +15,7 @@ router = APIRouter(
 )
 
 
-@router.post("/register")
+@router.post("/register", response_model=TokenSchema)
 async def register(data: RegisterSchema, db: Session = Depends(get_db)):
     email_exists = db.query(User).filter(User.email == data.email).first()
 
@@ -48,7 +48,7 @@ async def register(data: RegisterSchema, db: Session = Depends(get_db)):
     }
 
 
-@router.post("/login")
+@router.post("/login", response_model=TokenSchema)
 async def login(data: LoginSchema, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.email == data.email).first()
 

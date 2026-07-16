@@ -14,3 +14,9 @@ class LoginSchema(BaseSchema):
 class RegisterSchema(LoginSchema):
     name: str
     username: str
+
+
+# Token
+class TokenSchema(BaseSchema):
+    access_token: str
+    token_type: str
