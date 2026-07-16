@@ -17,9 +17,11 @@ class User(BaseModel):
         nullable=False
     )
     email: Mapped[str] = mapped_column(
+        unique=True,
         nullable=False
     )
     username: Mapped[str] = mapped_column(
+        unique=True,
         nullable=False
     )
     password: Mapped[str] = mapped_column(

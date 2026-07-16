@@ -40,12 +40,12 @@ async def register(data: RegisterSchema, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(user)
 
-    access_token = create_access_token(user_id=user.id, remember=False)
+    access_token = create_access_token(user_id=user.id)
 
-    return {
-        "access_token": access_token,
-        "token_type": "bearer",
-    }
+    return TokenSchema(
+        access_token=access_token,
+        token_type="bearer"
+    )
 
 
 @router.post("/login", response_model=TokenSchema)
@@ -66,7 +66,7 @@ async def login(data: LoginSchema, db: Session = Depends(get_db)):
 
     access_token = create_access_token(user_id=user.id)
 
-    return {
-        "access_token": access_token,
-        "token_type": "bearer",
-    }
+    return TokenSchema(
+        access_token=access_token,
+        token_type="bearer"
+    )
