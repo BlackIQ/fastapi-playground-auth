@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "25ca26725b271473adae440c99f3261aaa9caf9cb1fcc15aadc18ebbfc4983a1"
+            "sha256": "da802479a9aa574bf13559fe7f26ff9fb65434acb7fc65ceb83acca8ebda90ad"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -104,10 +104,10 @@
                 "standard"
             ],
             "hashes": [
-                "sha256:05bf08e0e527e3649a50c44bd1e0a2c13575c6cf9a939ff70013f288afc074de",
-                "sha256:d1140852664a91754da6db4db1e750ace4059f1a21adcf9b161ad4310271a621"
+                "sha256:11375b2a2c8c5a5ee05087960b6f1404ba1b48da96fa1a5aa68e2a5caf76f756",
+                "sha256:f808773b1a7aa1531ef750b68905787f3dd13834e78c44d1501f017335a4c1a7"
             ],
-            "version": "==0.0.29"
+            "version": "==0.0.30"
         },
         "fastapi-cloud-cli": {
             "hashes": [
@@ -707,6 +707,15 @@
             "markers": "python_version >= '3.9'",
             "version": "==2.20.0"
         },
+        "pyjwt": {
+            "hashes": [
+                "sha256:41571c89ca91598c79e8ef18a2d07367d4810fbbd6f637794879baf1b7703423",
+                "sha256:66adcc2aff09b3f1bbd95fc1e1577df8ac8723c978552fd43304c8a290ac5728"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.9'",
+            "version": "==2.13.0"
+        },
         "python-dotenv": {
             "hashes": [
                 "sha256:1d8214789a24de455a8b8bd8ae6fe3c6b69a5e3d64aa8a8e5d68e694bbcb285a",
@@ -1068,11 +1077,11 @@
         },
         "typer": {
             "hashes": [
-                "sha256:3512ca79ac5c11113414b36e80281b872884477722440691c89d1112e321a49c",
-                "sha256:c244a6bd558886fe3f8780efb6bdd28bb9aff005a94eedebaa5cb32926fe2f7e"
+                "sha256:629bd12ea5d13a17148125d9a264f949eb171fb3f120f9b04d85873cab054fa5",
+                "sha256:6f4b27631e47f077871b7dc30e933ec0131c1390fbe0e387ea5574b5bac9ccf1"
             ],
             "markers": "python_version >= '3.10'",
-            "version": "==0.26.8"
+            "version": "==0.27.0"
         },
         "typing-extensions": {
             "hashes": [
