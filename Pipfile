@@ -11,6 +11,7 @@ alembic = "*"
 psycopg2-binary = "*"
 python-dotenv = "*"
 pyjwt = "*"
+pwdlib = {extras = ["argon2"], version = "*"}
 
 [dev-packages]
 
