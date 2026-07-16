@@ -2,7 +2,7 @@
 from core.db import session
 
 
-# Get DB
+# Get DB Dependency
 def get_db():
     db = session()
 
