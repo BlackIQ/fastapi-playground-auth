@@ -1,7 +1,7 @@
 [project]
 name = "playground-fastapi-004-auth"
 version = "0.1.0"
-description = "Add your description here"
+description = "FastAPI Playground 004 - Auth"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
@@ -14,3 +14,9 @@ dependencies = [
     "python-dotenv>=1.2.2",
     "sqlalchemy>=2.0.51",
 ]
+
+[tool.fastapi]
+entrypoint = "main:app"
+
+[tool.vercel]
+entrypoint = "main:app"
