@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     secret: str = ""
     algorithm: str = "HS256"
 
-    model_config = SettingsConfigDict(env_file="../.env")
+    model_config = SettingsConfigDict(env_file=".env")
 
 
 # Run settings
